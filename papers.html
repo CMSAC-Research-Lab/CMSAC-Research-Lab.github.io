@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CMSAC Research Lab - Papers</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 5,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">CMSAC Research Lab</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./papers.html" aria-current="page">
+ <span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./media.html">
+ <span class="menu-text">Media</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Big Data Bowl">Big Data Bowl <span class="quarto-category-count">(5)</span></div><div class="category" data-category="completion probability">completion probability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="conditional density estimation">conditional density estimation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="continuous-time expected value">continuous-time expected value <span class="quarto-category-count">(1)</span></div><div class="category" data-category="deep learning">deep learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="expected points">expected points <span class="quarto-category-count">(3)</span></div><div class="category" data-category="football">football <span class="quarto-category-count">(7)</span></div><div class="category" data-category="generalized additive models">generalized additive models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ghosting">ghosting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="image extraction">image extraction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mixture models">mixture models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="multilevel models">multilevel models <span class="quarto-category-count">(2)</span></div><div class="category" data-category="player evaluation">player evaluation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="player-tracking data">player-tracking data <span class="quarto-category-count">(6)</span></div><div class="category" data-category="prediction intervals">prediction intervals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="random forests">random forests <span class="quarto-category-count">(2)</span></div><div class="category" data-category="trail running">trail running <span class="quarto-category-count">(1)</span></div><div class="category" data-category="win probability">win probability <span class="quarto-category-count">(2)</span></div></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Papers</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="football,player-tracking data,random forests,conditional density estimation,ghosting,Big Data Bowl,expected points" data-listing-date-sort="1719288000000" data-listing-file-modified-sort="1724110396527" data-listing-reading-time-sort="1.185">
+<div class="thumbnail">
+<p><a href="./papers/nflghosts.html"> <img src="https://arxiv.org/html/2406.17220v1/extracted/5689269/figures/ex_play_epv_grid.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/nflghosts.html">
+<h3 class="no-anchor listing-title">
+NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('random forests'); return false;">
+random forests
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('conditional density estimation'); return false;">
+conditional density estimation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ghosting'); return false;">
+ghosting
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Big Data Bowl'); return false;">
+Big Data Bowl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('expected points'); return false;">
+expected points
+</div>
+</div>
+<a href="./papers/nflghosts.html">
+<div class="listing-description">
+<p>A ghosting framework to evaluate players with high-dimensional tracking data features through distribution estimates via flexible random forests for conditional density estimation.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/nflghosts.html">
+<div class="listing-date">
+Jun 25, 2024
+</div>
+<div class="listing-author">
+Ronald Yurko, Quang Nguyen, Konstantinos Pelechrinis
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="football,Big Data Bowl,player-tracking data" data-listing-date-sort="1710993600000" data-listing-file-modified-sort="1724110396526" data-listing-reading-time-sort="1.215">
+<div class="thumbnail">
+<p><a href="./papers/fractional-tackles.html"> <img src="https://arxiv.org/html/2403.14769v1/x6.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/fractional-tackles.html">
+<h3 class="no-anchor listing-title">
+Fractional tackles: Leveraging player tracking data for within-play tackling evaluation in american football
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Big Data Bowl'); return false;">
+Big Data Bowl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+</div>
+<a href="./papers/fractional-tackles.html">
+<div class="listing-description">
+<p>Introducing fractional tackles, a new way to measure tackles with player-tracking data (2024 Big Data Bowl finalist)</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/fractional-tackles.html">
+<div class="listing-date">
+Mar 21, 2024
+</div>
+<div class="listing-author">
+Quang Nguyen, Ruitong (Larry) Jiang, Meg Ellingwood, Ronald Yurko
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="football,Big Data Bowl,player-tracking data,multilevel models" data-listing-date-sort="1690257600000" data-listing-file-modified-sort="1724110396528" data-listing-reading-time-sort="1.465">
+<div class="thumbnail">
+<p><a href="./papers/strain.html"> <img src="https://i.ytimg.com/vi/_MAs16nqVdw/maxresdefault.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/strain.html">
+<h3 class="no-anchor listing-title">
+Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Big Data Bowl'); return false;">
+Big Data Bowl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('multilevel models'); return false;">
+multilevel models
+</div>
+</div>
+<a href="./papers/strain.html">
+<div class="listing-description">
+<p>Introducing STRAIN, a novel metric for measuring pass rushers (2023 Big Data Bowl finalist)</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/strain.html">
+<div class="listing-date">
+Jul 25, 2023
+</div>
+<div class="listing-author">
+Quang Nguyen, Ronald Yurko, Gregory J. Matthews
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="trail running,random forests,prediction intervals" data-listing-date-sort="1601438400000" data-listing-file-modified-sort="1724110396529" data-listing-reading-time-sort="1.315">
+<div class="thumbnail">
+<p><a href="./papers/trap.html"> <img src="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0013/asset/graphic/j_jqas-2020-0013_fig_001.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/trap.html">
+<h3 class="no-anchor listing-title">
+TRAP: a predictive framework for the Assessment of Performance in Trail Running
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('trail running'); return false;">
+trail running
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('random forests'); return false;">
+random forests
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('prediction intervals'); return false;">
+prediction intervals
+</div>
+</div>
+<a href="./papers/trap.html">
+<div class="listing-description">
+<p>An introduction to modeling trail running performance</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/trap.html">
+<div class="listing-date">
+Sep 30, 2020
+</div>
+<div class="listing-author">
+Riccardo Fogliato, Natalia L. Oliveira, Ronald Yurko
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="football,player-tracking data,Big Data Bowl,mixture models" data-listing-date-sort="1590724800000" data-listing-file-modified-sort="1724110396526" data-listing-reading-time-sort="1.39">
+<div class="thumbnail">
+<p><a href="./papers/dutta-coverage.html"> <img src="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/asset/graphic/j_jqas-2020-0017_fig_010.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/dutta-coverage.html">
+<h3 class="no-anchor listing-title">
+Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Big Data Bowl'); return false;">
+Big Data Bowl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('mixture models'); return false;">
+mixture models
+</div>
+</div>
+<a href="./papers/dutta-coverage.html">
+<div class="listing-description">
+<p>Using gaussian mixture models with NFL tracking data to identify man versus zone pass coverage</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/dutta-coverage.html">
+<div class="listing-date">
+May 29, 2020
+</div>
+<div class="listing-author">
+Rishav Dutta, Ronald Yurko, Samuel Ventura
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="football,player-tracking data,completion probability,image extraction,generalized additive models" data-listing-date-sort="1588046400000" data-listing-file-modified-sort="1724110396527" data-listing-reading-time-sort="1.42">
+<div class="thumbnail">
+<p><a href="./papers/nextgenscrapy.html"> <img data-src="https://ar5iv.labs.arxiv.org/html/1906.03339/assets/figures/qb_charts_bold/JoshuaAllen_cp.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/nextgenscrapy.html">
+<h3 class="no-anchor listing-title">
+Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('completion probability'); return false;">
+completion probability
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('image extraction'); return false;">
+image extraction
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('generalized additive models'); return false;">
+generalized additive models
+</div>
+</div>
+<a href="./papers/nextgenscrapy.html">
+<div class="listing-description">
+<p>How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/nextgenscrapy.html">
+<div class="listing-date">
+Apr 28, 2020
+</div>
+<div class="listing-author">
+Sarah Mallepalle, Ronald Yurko, Konstantinos Pelechrinis, Samuel Ventura
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="football,player-tracking data,Big Data Bowl,expected points,win probability,continuous-time expected value,deep learning,conditional density estimation" data-listing-date-sort="1578891600000" data-listing-file-modified-sort="1724110396526" data-listing-reading-time-sort="1.455">
+<div class="thumbnail">
+<a href="./papers/goingdeep.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./papers/goingdeep.html"></a></p>
+</div>
+<div class="body">
+<a href="./papers/goingdeep.html">
+<h3 class="no-anchor listing-title">
+Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player-tracking data'); return false;">
+player-tracking data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Big Data Bowl'); return false;">
+Big Data Bowl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('expected points'); return false;">
+expected points
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('win probability'); return false;">
+win probability
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('continuous-time expected value'); return false;">
+continuous-time expected value
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('deep learning'); return false;">
+deep learning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('conditional density estimation'); return false;">
+conditional density estimation
+</div>
+</div>
+<a href="./papers/goingdeep.html">
+<div class="listing-description">
+<p>An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/goingdeep.html">
+<div class="listing-date">
+Jan 13, 2020
+</div>
+<div class="listing-author">
+Ronald Yurko, Francesca Matano, Lee F. Richardson, Nicholas Granered, Taylor Pospisil, Konstantinos Pelechrinis, Samuel Ventura
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="football,expected points,win probability,player evaluation,multilevel models" data-listing-date-sort="1555387200000" data-listing-file-modified-sort="1724110396528" data-listing-reading-time-sort="1.685">
+<div class="thumbnail">
+<p><a href="./papers/nflwar.html"> <img data-src="https://www.degruyter.com/document/doi/10.1515/jqas-2018-0010/asset/graphic/j_jqas-2018-0010_fig_007.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./papers/nflwar.html">
+<h3 class="no-anchor listing-title">
+nflWAR: a reproducible method for offensive player evaluation in football
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('football'); return false;">
+football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('expected points'); return false;">
+expected points
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('win probability'); return false;">
+win probability
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('player evaluation'); return false;">
+player evaluation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('multilevel models'); return false;">
+multilevel models
+</div>
+</div>
+<a href="./papers/nflwar.html">
+<div class="listing-description">
+<p>An introduction to reproducible expected points, win probability, and player evaluation models in American football</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./papers/nflwar.html">
+<div class="listing-date">
+Apr 16, 2019
+</div>
+<div class="listing-author">
+Ronald Yurko, Samuel Ventura, Maksim Horowitz
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center"><a href="https://www.stat.cmu.edu/cmsac/">www.stat.cmu.edu/cmsac</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>
