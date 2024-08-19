@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/talks.html",
-    "items": []
-  },
-  {
     "listing": "/papers.html",
     "items": [
       "/papers/nflghosts.html",
@@ -15,6 +11,10 @@
       "/papers/goingdeep.html",
       "/papers/nflwar.html"
     ]
+  },
+  {
+    "listing": "/talks.html",
+    "items": []
   },
   {
     "listing": "/media.html",
