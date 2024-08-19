@@ -1,0 +1,11 @@
+---
+title: "Media"
+listing:
+  contents: media.yml
+  type: table
+  fields: [title, outlet, date]
+  sort:
+    - "date desc"
+    - "title asc"
+---
+

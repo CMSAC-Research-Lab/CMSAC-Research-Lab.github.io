@@ -1,0 +1,16 @@
+---
+title: "Talks"
+listing:
+  id: talk-listings
+  contents: talks.yml
+  type: table
+  fields: [title, event, date]
+  sort:
+    - "date desc"
+    - "event asc"
+---
+
+Selection of talks that are available to view online:
+
+::: {#talk-listings}
+:::

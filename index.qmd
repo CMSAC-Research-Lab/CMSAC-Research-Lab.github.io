@@ -1,0 +1,15 @@
+---
+title: "CMSAC Research Lab"
+---
+
+Welcome to the home page of the [Carnegie Mellon Sports Analytics Center (CMSAC)](https://www.stat.cmu.edu/cmsac/) Research Lab. We are a group of faculty and students in the [Department of Statistics & Data Science at Carnegie Mellon University](https://stat.cmu.edu/) that are developing novel, cutting-edge approaches in sports analytics across a wide range of problems. We have recently been focused on inferring player- and team-level effects with rich spatio-temporal data.
+
+You can check out papers by the CMSAC Research Lab on this site, along with links to talks and media articles featuring our work.
+
+The core members of our lab include:
+
++ [Ron Yurko](https://www.stat.cmu.edu/~ryurko/), Principal Investigator and Director of CMSAC 
++ [Sam Ventura](https://www.cmu.edu/dietrich/statistics-datascience/people/affiliated/sam-ventura.html), Affiliated Faculty
++ [Quang Nguyen](https://qntkhvn.netlify.app/), PhD student, Statistics & Data Science
++ Ruitong (Larry) Jiang, PhD student, Neuroscience
++ Meg Ellingwood, PhD student, Statistics & Data Science

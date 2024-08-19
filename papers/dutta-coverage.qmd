@@ -1,0 +1,52 @@
+---
+title: "Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data"
+date: May 29, 2020
+description: Using gaussian mixture models with NFL tracking data to identify man versus zone pass coverage
+author:
+  - name: Rishav Dutta
+    affiliation: School of Computer Science, Carnegie Mellon University
+  - name: Ronald Yurko
+    email: ryurko@stat.cmu.edu
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Samuel Ventura
+    affiliation:
+      - ref: cmu
+categories:
+  - football
+  - player-tracking data
+  - Big Data Bowl
+  - mixture models
+---
+
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://arxiv.org/abs/1906.11373" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#dutta2020unsupervised" aria-expanded="false" aria-controls="dutta2020unsupervised">
+  BibTeX
+</button>
+<div class="collapse" id="dutta2020unsupervised">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{dutta2020unsupervised,
+  title={Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data},
+  author={Dutta, Rishav and Yurko, Ronald and Ventura, Samuel L},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={16},
+  number={2},
+  pages={143--161},
+  year={2020},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Statistical analysis of defensive players in football has lagged behind that of offensive players, special teams, and coaching decisions, largely because data on individual defensive players has historically been lacking. With the introduction of player tracking data from the NFL, researchers can now tackle these problems. However, event and strategy annotations in the NFL’s tracking data are limited, especially when it comes to describing what defensive players do on each play. Moreover, methods for creating these annotations typically require extensive human labeling, which is difficult and expensive. Because of the importance of the passing game and the limited prior research on the defensive side of passing, we provide annotations for the pass coverage types of cornerbacks using unsupervised learning techniques, which require no training data. We define a set of features from the tracking data that distinguish between “man” and “zone” coverage. We use mixture models to create clusters corresponding to each group, allowing us to provide probabilistic assignments to each coverage type (or cluster). Additionally, we quantify each feature’s influence in distinguishing defensive pass coverage types. Our work makes possible several potential avenues of future NFL research into defensive backs and pass coverage strategies.
+
+![](https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/asset/graphic/j_jqas-2020-0017_fig_010.jpg){fig-align="center" width=65%}

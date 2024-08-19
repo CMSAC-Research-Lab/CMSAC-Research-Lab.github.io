@@ -1,0 +1,56 @@
+---
+title: "Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses"
+date: April 28, 2020
+description: How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration
+author:
+  - name: Sarah Mallepalle
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Ronald Yurko
+    email: ryurko@stat.cmu.edu
+    affiliation:
+      - ref: cmu
+  - name: Konstantinos Pelechrinis
+    affiliation: School of Computing and Information, University of Pittsburgh
+  - name: Samuel Ventura
+    affiliation:
+      - ref: cmu
+categories:
+  - football
+  - player-tracking data
+  - completion probability
+  - image extraction
+  - generalized additive models
+---
+
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0052/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#mallepalle2020extracting" aria-expanded="false" aria-controls="mallepalle2020extracting">
+  BibTeX
+</button>
+<div class="collapse" id="mallepalle2020extracting">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{mallepalle2020extracting,
+  title={Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses},
+  author={Mallepalle, Sarah and Yurko, Ronald and Pelechrinis, Konstantinos and Ventura, Samuel L},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={16},
+  number={2},
+  pages={95--120},
+  year={2020},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+The NFL collects detailed tracking data capturing the location of all players and the ball during each play. Although the raw form of this data is not publicly available, the NFL releases a set of aggregated statistics via their Next Gen Stats (NGS) platform. They also provide charts showing the locations of pass attempts and outcomes for individual quarterbacks. Our work aims to partially close the gap between what data is available privately (to NFL teams) and publicly, and our contribution is two-fold. First, we introduce an image processing tool designed specifically for extracting the raw data from the NGS pass charts. We extract the pass outcome, coordinates, and other metadata. Second, we analyze the resulting dataset, examining the spatial tendencies and performances of individual quarterbacks and defenses. We use a generalized additive model for completion percentages by field location. We introduce a naive Bayes approach for estimating the 2-D completion percentage surfaces of individual teams and quarterbacks, and we provide a one-number summary, completion percentage above expectation (CPAE), for evaluating quarterbacks and team defenses. We find that our pass location data closely matches the NFL’s tracking data, and that our CPAE metric closely matches the NFL’s proprietary CPAE metric.
+
+![](https://ar5iv.labs.arxiv.org/html/1906.03339/assets/figures/qb_charts_bold/JoshuaAllen_cp.png){fig-align="center" width=65%}

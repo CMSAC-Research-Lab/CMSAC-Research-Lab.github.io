@@ -1,0 +1,52 @@
+---
+title: "TRAP: a predictive framework for the Assessment of Performance in Trail Running"
+date: September 30, 2020
+description: An introduction to modeling trail running performance
+author:
+  - name: Riccardo Fogliato
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Natalia L. Oliveira
+    affiliation:
+      - ref: cmu
+  - name: Ronald Yurko
+    email: ryurko@stat.cmu.edu
+    affiliation:
+      - ref: cmu
+categories:
+  - trail running
+  - random forests
+  - prediction intervals
+---
+
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0013/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://arxiv.org/abs/2002.01328" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#fogliato2021trap" aria-expanded="false" aria-controls="fogliato2021trap">
+  BibTeX
+</button>
+<div class="collapse" id="fogliato2021trap">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{fogliato2021trap,
+  title={TRAP: a predictive framework for the Assessment of Performance in Trail Running},
+  author={Fogliato, Riccardo and Oliveira, Natalia L and Yurko, Ronald},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={17},
+  number={2},
+  pages={129--143},
+  year={2021},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Trail running is an endurance sport in which athletes face severe physical challenges. Due to the growing number of participants, the organization of limited staff, equipment, and medical support in these races now plays a key role. Monitoring runner’s performance is a difficult task that requires knowledge of the terrain and of the runner’s ability. In the past, choices were solely based on the organizers’ experience without reliance on data. However, this approach is neither scalable nor transferable. Instead, we propose a firm statistical methodology to perform this task, both before and during the race. Our proposed framework, Trail Running Assessment of Performance (TRAP), studies (1) the assessment of the runner’s ability to reach the next checkpoint, (2) the prediction of the runner’s expected passage time at the next checkpoint, and (3) corresponding prediction intervals for the passage time. We apply our methodology, using the race history of runners from the International Trail Running Association (ITRA) along with checkpoint and terrain-level information, to the “holy grail” of ultra-trail running, the Ultra-Trail du Mont-Blanc (UTMB) race, demonstrating the predictive power of our methodology.
+
+![](https://www.degruyter.com/document/doi/10.1515/jqas-2020-0013/asset/graphic/j_jqas-2020-0013_fig_001.jpg){fig-align="center" width=65%}

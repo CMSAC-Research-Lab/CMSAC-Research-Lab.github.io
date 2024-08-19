@@ -1,0 +1,65 @@
+---
+title: "Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data"
+date: January 13, 2020
+description: An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models
+author:
+  - name: Ronald Yurko
+    email: ryurko@stat.cmu.edu
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Francesca Matano
+    affiliation:
+      - ref: cmu
+  - name: Lee F. Richardson
+    affiliation:
+      - ref: cmu
+  - name: Nicholas Granered
+    affiliation: Statistics, University of Pittsburgh
+  - name: Taylor Pospisil
+    affiliation:
+      - ref: cmu
+  - name: Konstantinos Pelechrinis
+    affiliation: School of Computing and Information, University of Pittsburgh
+  - name: Samuel Ventura
+    affiliation:
+      - ref: cmu
+categories:
+  - football
+  - player-tracking data
+  - Big Data Bowl
+  - expected points
+  - win probability
+  - continuous-time expected value
+  - deep learning
+  - conditional density estimation
+---
+
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0056/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://arxiv.org/abs/1906.01760" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2020going" aria-expanded="false" aria-controls="yurko2020going">
+  BibTeX
+</button>
+<div class="collapse" id="yurko2020going">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{yurko2020going,
+  title={Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data},
+  author={Yurko, Ronald and Matano, Francesca and Richardson, Lee F and Granered, Nicholas and Pospisil, Taylor and Pelechrinis, Konstantinos and Ventura, Samuel L},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={16},
+  number={2},
+  pages={163--182},
+  year={2020},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Continuous-time assessments of game outcomes in sports have become increasingly common in the last decade. In American football, only discrete-time estimates of play value were possible, since the most advanced public football datasets were recorded at the play-by-play level. While measures such as expected points and win probability are useful for evaluating football plays and game situations, there has been no research into how these values change throughout the course of a play. In this work, we make two main contributions: First, we introduce a general framework for continuous-time within-play valuation in the National Football League using player-tracking data. Our modular framework incorporates several modular sub-models, to easily incorporate recent work involving player tracking data in football. Second, we use a long short-term memory recurrent neural network to construct a ball-carrier model to estimate how many yards the ball-carrier is expected to gain from their current position, conditional on the locations and trajectories of the ball-carrier, their teammates and opponents. Additionally, we demonstrate an extension with conditional density estimation so that the expectation of any measure of play value can be calculated in continuous-time, which was never before possible at such a granular level.
