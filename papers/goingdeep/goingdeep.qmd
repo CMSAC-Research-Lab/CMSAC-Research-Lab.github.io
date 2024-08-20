@@ -2,6 +2,7 @@
 title: "Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data"
 date: January 13, 2020
 description: An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models
+image: cover.jpg
 author:
   - name: Ronald Yurko
     email: ryurko@stat.cmu.edu

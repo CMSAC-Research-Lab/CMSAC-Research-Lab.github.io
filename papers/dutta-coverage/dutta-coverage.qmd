@@ -2,6 +2,7 @@
 title: "Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data"
 date: May 29, 2020
 description: Using gaussian mixture models with NFL tracking data to identify man versus zone pass coverage
+image: cover.jpg
 author:
   - name: Rishav Dutta
     affiliation: School of Computer Science, Carnegie Mellon University
@@ -49,4 +50,4 @@ categories:
 
 Statistical analysis of defensive players in football has lagged behind that of offensive players, special teams, and coaching decisions, largely because data on individual defensive players has historically been lacking. With the introduction of player tracking data from the NFL, researchers can now tackle these problems. However, event and strategy annotations in the NFL’s tracking data are limited, especially when it comes to describing what defensive players do on each play. Moreover, methods for creating these annotations typically require extensive human labeling, which is difficult and expensive. Because of the importance of the passing game and the limited prior research on the defensive side of passing, we provide annotations for the pass coverage types of cornerbacks using unsupervised learning techniques, which require no training data. We define a set of features from the tracking data that distinguish between “man” and “zone” coverage. We use mixture models to create clusters corresponding to each group, allowing us to provide probabilistic assignments to each coverage type (or cluster). Additionally, we quantify each feature’s influence in distinguishing defensive pass coverage types. Our work makes possible several potential avenues of future NFL research into defensive backs and pass coverage strategies.
 
-![](https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/asset/graphic/j_jqas-2020-0017_fig_010.jpg){fig-align="center" width=65%}
+

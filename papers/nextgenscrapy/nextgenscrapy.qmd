@@ -2,6 +2,7 @@
 title: "Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses"
 date: April 28, 2020
 description: How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration
+image: cover.jpg
 author:
   - name: Sarah Mallepalle
     affiliation:
@@ -53,4 +54,3 @@ categories:
 
 The NFL collects detailed tracking data capturing the location of all players and the ball during each play. Although the raw form of this data is not publicly available, the NFL releases a set of aggregated statistics via their Next Gen Stats (NGS) platform. They also provide charts showing the locations of pass attempts and outcomes for individual quarterbacks. Our work aims to partially close the gap between what data is available privately (to NFL teams) and publicly, and our contribution is two-fold. First, we introduce an image processing tool designed specifically for extracting the raw data from the NGS pass charts. We extract the pass outcome, coordinates, and other metadata. Second, we analyze the resulting dataset, examining the spatial tendencies and performances of individual quarterbacks and defenses. We use a generalized additive model for completion percentages by field location. We introduce a naive Bayes approach for estimating the 2-D completion percentage surfaces of individual teams and quarterbacks, and we provide a one-number summary, completion percentage above expectation (CPAE), for evaluating quarterbacks and team defenses. We find that our pass location data closely matches the NFL’s tracking data, and that our CPAE metric closely matches the NFL’s proprietary CPAE metric.
 
-![](https://ar5iv.labs.arxiv.org/html/1906.03339/assets/figures/qb_charts_bold/JoshuaAllen_cp.png){fig-align="center" width=65%}

@@ -2,6 +2,7 @@
 title: "nflWAR: a reproducible method for offensive player evaluation in football"
 date: April 16, 2019
 description: An introduction to reproducible expected points, win probability, and player evaluation models in American football
+image: cover.jpg
 author:
   - name: Ronald Yurko
     email: ryurko@stat.cmu.edu
@@ -52,8 +53,6 @@ categories:
 ### Abstract
 
 Unlike other major professional sports, American football lacks comprehensive statistical ratings for player evaluation that are both reproducible and easily interpretable in terms of game outcomes. Existing methods for player evaluation in football depend heavily on proprietary data, are not reproducible, and lag behind those of other major sports. We present four contributions to the study of football statistics in order to address these issues. First, we develop the R package nflscrapR to provide easy access to publicly available play-by-play data from the National Football League (NFL) dating back to 2009. Second, we introduce a novel multinomial logistic regression approach for estimating the expected points for each play. Third, we use the expected points as input into a generalized additive model for estimating the win probability for each play. Fourth, we introduce our nflWAR framework, using multilevel models to isolate the contributions of individual offensive skill players, and providing estimates for their individual wins above replacement (WAR). We estimate the uncertainty in each player's WAR through a resampling approach specifically designed for football, and we present these results for the 2017 NFL season. We discuss how our reproducible WAR framework, built entirely on publicly available data, can be easily extended to estimate WAR for players at any position, provided that researchers have access to data specifying which players are on the field during each play. Finally, we discuss the potential implications of this work for NFL teams.
-
-![Figure 7: Distribution of WAR in 2017 season by type and position.](https://www.degruyter.com/document/doi/10.1515/jqas-2018-0010/asset/graphic/j_jqas-2018-0010_fig_007.jpg){fig-align="center" width=65%}
 
 
 
