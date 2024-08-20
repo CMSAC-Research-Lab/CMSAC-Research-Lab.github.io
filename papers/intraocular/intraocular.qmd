@@ -1,0 +1,56 @@
+---
+title: "Augmenting adjusted plus-minus in soccer with FIFA ratings"
+date: February 22, 2023
+description: Introducing augmenting adjusted plus-minus, which combines external rating systems (FIFA ratings) with adjusted plus-minus to improve player ratings
+image: cover.jpg
+author:
+  - name: Francesca Matano
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Lee F. Richardson
+    affiliation:
+      - ref: cmu
+  - name: Taylor Pospisil
+    affiliation:
+      - ref: cmu
+  - name: Collin A. Politsch
+    affiliation: Department of Statistics & Data Science and Machine Learning Department, Carnegie Mellon University
+  - name: Jining Qin
+    affiliation:
+      - ref: cmu
+categories:
+  - player ratings
+  - soccer
+  - adjusted plus-minus
+  - Bayesian
+---
+
+<a href="https://doi.org/10.1515/jqas-2021-0005" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://arxiv.org/abs/1810.08032" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#matano2023augmenting" aria-expanded="false" aria-controls="matano2023augmenting">
+  BibTeX
+</button>
+<div class="collapse" id="matano2023augmenting">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{matano2023augmenting,
+  title={Augmenting adjusted plus-minus in soccer with FIFA ratings},
+  author={Matano, Francesca and Richardson, Lee F. and Pospisil, Taylor and Politsch, Collin A. and Qin, Jining},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={19},
+  number={1},
+  pages={43--49},
+  year={2023},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Adjusted plus-minus (APM) can sometimes lack common sense. This happens, for instance, when mediocre players move into the top ten, and superstars fall out of the top 100. These occasional outliers hurt the credibility of APM, and mask the benefits, such as increased prediction accuracy. We address this problem with a new method, called Augmented APM. Augmented APM incorporates external player ratings into APM methodology. The purpose of the external rating system is to capture common sense player value. Augmented APM maintains the benefits of APM, and improves credibility by leveraging external ratings that pass the eye test. The key technical idea is recasting APM into a Bayesian framework and using external ratings in the prior distribution. This paper instantiates the Augmented APM method by applying it to soccer. APM methods have not had a substantial impact on soccer, because soccer matches are low scoring, with a low number of substitutions. For external ratings, we use the video game FIFA, which provides subjective evaluations from thousands of scouts, coaches, and season ticket holders. Our paper shows that Augmented APM predicts match outcomes better than (1) APM, and (2) FIFA ratings. We also show that Augmented APM de-correlates players on the same team, which helps for players that play most of their minutes together. Although our results are specific to soccer and FIFA ratings, Augmented APM is a principled method to combine subjective and objective ratings into a single system.

@@ -9,7 +9,7 @@ author:
     affiliation:
       - id: cmu
         name: Department of Statistics & Data Science, Carnegie Mellon University
-  - name: Samuel Ventura
+  - name: Samuel L. Ventura
     affiliation:
       - ref: cmu
   - name: Maksim Horowitz

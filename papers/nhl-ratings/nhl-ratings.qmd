@@ -1,0 +1,55 @@
+---
+title: "Competing process hazard function models for player ratings in ice hockey"
+date: February 28, 2013
+description: Modeling player ratings in ice hockey by treating the game as a competing stochastic process
+image: cover.jpg
+author:
+  - name: A. C. Thomas
+    affiliation:
+      - id: cmu
+        name: Department of Statistics, Carnegie Mellon University
+  - name: Samuel L. Ventura
+    affiliation:
+      - ref: cmu
+  - name: Shane T. Jensen
+    affiliation: Department of Statistics, The Wharton School, University of Pennsylvania
+  - name: Stephen Ma
+    affiliation:
+    - ref: cmu
+categories:
+  - ice hockey
+  - player ratings
+  - Bayesian
+  - hierarchical models
+  - competing process models
+  - Cox model
+---
+
+<a href="https://doi.org/10.1214/13-AOAS646" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> Annals of Applied Statistics</a>
+<a href="https://arxiv.org/abs/1208.0799" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#thomas2013competing" aria-expanded="false" aria-controls="thomas2013competing">
+  BibTeX
+</button>
+<div class="collapse" id="thomas2013competing">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{thomas2013competing,
+  title={Competing process hazard function models for player ratings in ice hockey},
+  author={Thomas, A. C. and Ventura, Samuel and Jensen, Shane T. and Ma, Stephen},
+  journal={Annals of Applied Statistics},
+  volume={7},
+  number={3},
+  pages={1497--1524},
+  year={2013},
+  publisher={Institute of Mathematical Statistics}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Evaluating the overall ability of players in the National Hockey League (NHL) is a difficult task. Existing methods such as the famous "plus/minus" statistic have many shortcomings. Standard linear regression methods work well when player substitutions are relatively uncommon and scoring events are relatively common, such as in basketball, but as neither of these conditions exists for hockey, we use an approach that embraces the unique characteristics of the sport. We model the scoring rate for each team as its own semi-Markov process, with hazard functions for each process that depend on the players on the ice. This method yields offensive and defensive player ability ratings which take into account quality of teammates and opponents, the game situation, and other desired factors, that themselves have a meaningful interpretation in terms of game outcomes. Additionally, since the number of parameters in this model can be quite large, we make use of two different shrinkage methods depending on the question of interest: full Bayesian hierarchical models that partially pool parameters according to player position, and penalized maximum likelihood estimation to select a smaller number of parameters that stand out as being substantially different from average. We apply the model to all five-on-five (full-strength) situations for games in five NHL seasons.
