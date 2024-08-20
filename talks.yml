@@ -4,12 +4,16 @@
   path: https://www.youtube.com/watch?v=_MAs16nqVdw
 - title: "Quang Nguyen - Big Data Bowl Workshop"
   date: 2023-11-10
-  event: CMSAC 2023 Workshop
+  event: CMSAC 2023
   path: https://www.youtube.com/watch?v=2xg3nyPNo3s
 - title: "Quang Nguyen - Fractional Tackles"
   date: 2024-04-13
   event: UCSAS 2024
   path: https://www.youtube.com/watch?v=jv1yvTw0ti0&t=3290s
+- title: "Quang Nguyen - Aging Curves"
+  date: 2022-10-29
+  event: CMSAC 2022
+  path: https://www.youtube.com/watch?v=y-AFTpa2oS0
 - title: "Ron Yurko - NFL Ghosts"
   date: 2023-09-23
   event: NESSIS 2023
@@ -26,7 +30,15 @@
   date: 2017-09-23
   event: NESSIS 2017
   path: https://www.youtube.com/watch?v=djD-yL3vWNQ
+- title: "Ron Yurko - nflWAR"
+  date: 2017-10-28
+  event: CMSAC 2017
+  path: https://www.youtube.com/watch?v=QjWtnA0bGe8
 - title: "Ron Yurko - NFL Player Evaluation with Expected Points"
   date: 2017-07-13
   event: Great Lakes Analytics in Sports Conference 2017
   path: https://www.youtube.com/watch?v=iKGW3Wdo8iQ
+- title: "Sam Ventura and Andrew Thomas - NHL Player Ratings"
+  date: 2011-09-24
+  event: NESSIS 2011
+  path: https://youtube.com/watch?v=jmZY30yeyFo

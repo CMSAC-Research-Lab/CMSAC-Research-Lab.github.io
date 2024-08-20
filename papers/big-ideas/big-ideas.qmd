@@ -1,0 +1,52 @@
+---
+title: "Big ideas in sports analytics and statistical tools for their investigation"
+date: January 10, 2023
+description: Highlighting big ideas in sports analytics by defining the concepts mathematically, explaining how they originated, and giving examples of their applications in multiple sports
+image: cover.jpg
+author:
+  - name: Benjamin S. Baumer
+    affiliation: Program in Statistical & Data Sciences, Smith College
+  - name: Gregory J. Matthews
+    affiliation: Department of Mathematics and Statistics, Loyola University Chicago
+  - name: Quang Nguyen
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+categories:
+  - datasets
+  - pairwise comparisons
+  - R packages
+  - sports analytics
+  - sports data
+---
+
+<a href="https://doi.org/10.1002/wics.1612" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> WIREs Computational Statistics</a>
+<a href="https://arxiv.org/abs/2301.04001" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<!-- Code -->
+<a href="https://github.com/beanumber/wire21" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#baumer2023big" aria-expanded="false" aria-controls="baumer2023big">
+  BibTeX
+</button>
+<div class="collapse" id="baumer2023big">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{baumer2023big,
+  title={Big ideas in sports analytics and statistical tools for their investigation},
+  author={Baumer, Benjamin S. and Matthews, Gregory J. and Nguyen, Quang},
+  journal={WIREs Computational Statistics},
+  volume={15},
+  number={6},
+  pages={e1612},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Sports analytics---broadly defined as the pursuit of improvement in athletic performance through the analysis of data---has expanded its footprint both in the professional sports industry and in academia over the past 30 years. In this paper, we connect four big ideas that are common across multiple sports: the expected value of a game state, win probability, measures of team strength, and the use of sports betting market data. For each, we explore both the shared similarities and individual idiosyncrasies of analytical approaches in each sport. While our focus is on the concepts underlying each type of analysis, any implementation necessarily involves statistical methodologies, computational tools, and data sources. Where appropriate, we outline how data, models, tools, and knowledge of the sport combine to generate actionable insights. We also describe opportunities to share analytical work, but omit an in-depth discussion of individual player evaluation as beyond our scope. This paper should serve as a useful overview for anyone becoming interested in the study of sports analytics. 
