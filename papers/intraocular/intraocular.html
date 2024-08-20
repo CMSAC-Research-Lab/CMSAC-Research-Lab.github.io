@@ -6,14 +6,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sarah Mallepalle">
-<meta name="author" content="Ronald Yurko">
-<meta name="author" content="Konstantinos Pelechrinis">
-<meta name="author" content="Samuel L. Ventura">
-<meta name="dcterms.date" content="2020-04-28">
-<meta name="description" content="How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration">
+<meta name="author" content="Francesca Matano">
+<meta name="author" content="Lee F. Richardson">
+<meta name="author" content="Taylor Pospisil">
+<meta name="author" content="Collin A. Politsch">
+<meta name="author" content="Jining Qin">
+<meta name="dcterms.date" content="2023-02-22">
+<meta name="description" content="Introducing augmenting adjusted plus-minus, which combines external rating systems (FIFA ratings) with adjusted plus-minus to improve player ratings">
 
-<title>Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses – CMSAC Research Lab</title>
+<title>Augmenting adjusted plus-minus in soccer with FIFA ratings – CMSAC Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,19 +135,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses</h1>
+<h1 class="title">Augmenting adjusted plus-minus in soccer with FIFA ratings</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">football</div>
-    <div class="quarto-category">player-tracking data</div>
-    <div class="quarto-category">completion probability</div>
-    <div class="quarto-category">image extraction</div>
-    <div class="quarto-category">generalized additive models</div>
+    <div class="quarto-category">player ratings</div>
+    <div class="quarto-category">soccer</div>
+    <div class="quarto-category">adjusted plus-minus</div>
+    <div class="quarto-category">Bayesian</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration
+    Introducing augmenting adjusted plus-minus, which combines external rating systems (FIFA ratings) with adjusted plus-minus to improve player ratings
   </div>
 </div>
 
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Sarah Mallepalle </p>
+    <p class="author">Francesca Matano </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Ronald Yurko <a href="mailto:ryurko@stat.cmu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Lee F. Richardson </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -171,15 +171,23 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Konstantinos Pelechrinis </p>
+    <p class="author">Taylor Pospisil </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of Computing and Information, University of Pittsburgh
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Samuel L. Ventura </p>
+    <p class="author">Collin A. Politsch </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science and Machine Learning Department, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jining Qin </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -194,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 28, 2020</p>
+      <p class="date">February 22, 2023</p>
     </div>
   </div>
   
@@ -206,25 +214,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0052/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#mallepalle2020extracting" aria-expanded="false" aria-controls="mallepalle2020extracting"> BibTeX </button>
-<div id="mallepalle2020extracting" class="collapse">
+<a href="https://doi.org/10.1515/jqas-2021-0005" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1810.08032" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#matano2023augmenting" aria-expanded="false" aria-controls="matano2023augmenting"> BibTeX </button>
+<div id="matano2023augmenting" class="collapse">
 <br>
 <div class="card card-body">
-<pre class="{bibtex}"><code>@article{mallepalle2020extracting,
-  title={Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses},
-  author={Mallepalle, Sarah and Yurko, Ronald and Pelechrinis, Konstantinos and Ventura, Samuel L},
+<pre class="{bibtex}"><code>@article{matano2023augmenting,
+  title={Augmenting adjusted plus-minus in soccer with FIFA ratings},
+  author={Matano, Francesca and Richardson, Lee F. and Pospisil, Taylor and Politsch, Collin A. and Qin, Jining},
   journal={Journal of Quantitative Analysis in Sports},
-  volume={16},
-  number={2},
-  pages={95--120},
-  year={2020},
+  volume={19},
+  number={1},
+  pages={43--49},
+  year={2023},
   publisher={De Gruyter}
 }</code></pre>
 </div>
 </div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>The NFL collects detailed tracking data capturing the location of all players and the ball during each play. Although the raw form of this data is not publicly available, the NFL releases a set of aggregated statistics via their Next Gen Stats (NGS) platform. They also provide charts showing the locations of pass attempts and outcomes for individual quarterbacks. Our work aims to partially close the gap between what data is available privately (to NFL teams) and publicly, and our contribution is two-fold. First, we introduce an image processing tool designed specifically for extracting the raw data from the NGS pass charts. We extract the pass outcome, coordinates, and other metadata. Second, we analyze the resulting dataset, examining the spatial tendencies and performances of individual quarterbacks and defenses. We use a generalized additive model for completion percentages by field location. We introduce a naive Bayes approach for estimating the 2-D completion percentage surfaces of individual teams and quarterbacks, and we provide a one-number summary, completion percentage above expectation (CPAE), for evaluating quarterbacks and team defenses. We find that our pass location data closely matches the NFL’s tracking data, and that our CPAE metric closely matches the NFL’s proprietary CPAE metric.</p>
+<p>Adjusted plus-minus (APM) can sometimes lack common sense. This happens, for instance, when mediocre players move into the top ten, and superstars fall out of the top 100. These occasional outliers hurt the credibility of APM, and mask the benefits, such as increased prediction accuracy. We address this problem with a new method, called Augmented APM. Augmented APM incorporates external player ratings into APM methodology. The purpose of the external rating system is to capture common sense player value. Augmented APM maintains the benefits of APM, and improves credibility by leveraging external ratings that pass the eye test. The key technical idea is recasting APM into a Bayesian framework and using external ratings in the prior distribution. This paper instantiates the Augmented APM method by applying it to soccer. APM methods have not had a substantial impact on soccer, because soccer matches are low scoring, with a low number of substitutions. For external ratings, we use the video game FIFA, which provides subjective evaluations from thousands of scouts, coaches, and season ticket holders. Our paper shows that Augmented APM predicts match outcomes better than (1) APM, and (2) FIFA ratings. We also show that Augmented APM de-correlates players on the same team, which helps for players that play most of their minutes together. Although our results are specific to soccer and FIFA ratings, Augmented APM is a principled method to combine subjective and objective ratings into a single system.</p>
 
 
 </section>
