@@ -6,13 +6,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Rishav Dutta">
+<meta name="author" content="Sarah Mallepalle">
 <meta name="author" content="Ronald Yurko">
+<meta name="author" content="Konstantinos Pelechrinis">
 <meta name="author" content="Samuel Ventura">
-<meta name="dcterms.date" content="2020-05-29">
-<meta name="description" content="Using gaussian mixture models with NFL tracking data to identify man versus zone pass coverage">
+<meta name="dcterms.date" content="2020-04-28">
+<meta name="description" content="How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration">
 
-<title>Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data – CMSAC Research Lab</title>
+<title>Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses – CMSAC Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28,22 +29,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -93,19 +94,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -133,18 +134,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data</h1>
+<h1 class="title">Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses</h1>
   <div class="quarto-categories">
     <div class="quarto-category">football</div>
     <div class="quarto-category">player-tracking data</div>
-    <div class="quarto-category">Big Data Bowl</div>
-    <div class="quarto-category">mixture models</div>
+    <div class="quarto-category">completion probability</div>
+    <div class="quarto-category">image extraction</div>
+    <div class="quarto-category">generalized additive models</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Using gaussian mixture models with NFL tracking data to identify man versus zone pass coverage
+    How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration
   </div>
 </div>
 
@@ -153,11 +155,11 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Rishav Dutta </p>
+    <p class="author">Sarah Mallepalle </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of Computer Science, Carnegie Mellon University
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
           </p>
       </div>
     <div class="quarto-title-meta-contents">
@@ -166,6 +168,14 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Konstantinos Pelechrinis </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Computing and Information, University of Pittsburgh
           </p>
       </div>
     <div class="quarto-title-meta-contents">
@@ -184,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 29, 2020</p>
+      <p class="date">April 28, 2020</p>
     </div>
   </div>
   
@@ -196,17 +206,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.11373" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#dutta2020unsupervised" aria-expanded="false" aria-controls="dutta2020unsupervised"> BibTeX </button>
-<div id="dutta2020unsupervised" class="collapse">
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0052/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#mallepalle2020extracting" aria-expanded="false" aria-controls="mallepalle2020extracting"> BibTeX </button>
+<div id="mallepalle2020extracting" class="collapse">
 <br>
 <div class="card card-body">
-<pre class="{bibtex}"><code>@article{dutta2020unsupervised,
-  title={Unsupervised methods for identifying pass coverage among defensive backs with NFL player tracking data},
-  author={Dutta, Rishav and Yurko, Ronald and Ventura, Samuel L},
+<pre class="{bibtex}"><code>@article{mallepalle2020extracting,
+  title={Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses},
+  author={Mallepalle, Sarah and Yurko, Ronald and Pelechrinis, Konstantinos and Ventura, Samuel L},
   journal={Journal of Quantitative Analysis in Sports},
   volume={16},
   number={2},
-  pages={143--161},
+  pages={95--120},
   year={2020},
   publisher={De Gruyter}
 }</code></pre>
@@ -214,12 +224,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Statistical analysis of defensive players in football has lagged behind that of offensive players, special teams, and coaching decisions, largely because data on individual defensive players has historically been lacking. With the introduction of player tracking data from the NFL, researchers can now tackle these problems. However, event and strategy annotations in the NFL’s tracking data are limited, especially when it comes to describing what defensive players do on each play. Moreover, methods for creating these annotations typically require extensive human labeling, which is difficult and expensive. Because of the importance of the passing game and the limited prior research on the defensive side of passing, we provide annotations for the pass coverage types of cornerbacks using unsupervised learning techniques, which require no training data. We define a set of features from the tracking data that distinguish between “man” and “zone” coverage. We use mixture models to create clusters corresponding to each group, allowing us to provide probabilistic assignments to each coverage type (or cluster). Additionally, we quantify each feature’s influence in distinguishing defensive pass coverage types. Our work makes possible several potential avenues of future NFL research into defensive backs and pass coverage strategies.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/asset/graphic/j_jqas-2020-0017_fig_010.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
+<p>The NFL collects detailed tracking data capturing the location of all players and the ball during each play. Although the raw form of this data is not publicly available, the NFL releases a set of aggregated statistics via their Next Gen Stats (NGS) platform. They also provide charts showing the locations of pass attempts and outcomes for individual quarterbacks. Our work aims to partially close the gap between what data is available privately (to NFL teams) and publicly, and our contribution is two-fold. First, we introduce an image processing tool designed specifically for extracting the raw data from the NGS pass charts. We extract the pass outcome, coordinates, and other metadata. Second, we analyze the resulting dataset, examining the spatial tendencies and performances of individual quarterbacks and defenses. We use a generalized additive model for completion percentages by field location. We introduce a naive Bayes approach for estimating the 2-D completion percentage surfaces of individual teams and quarterbacks, and we provide a one-number summary, completion percentage above expectation (CPAE), for evaluating quarterbacks and team defenses. We find that our pass location data closely matches the NFL’s tracking data, and that our CPAE metric closely matches the NFL’s proprietary CPAE metric.</p>
 
 
 </section>

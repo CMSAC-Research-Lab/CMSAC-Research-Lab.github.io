@@ -6,14 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sarah Mallepalle">
+<meta name="author" content="Riccardo Fogliato">
+<meta name="author" content="Natalia L. Oliveira">
 <meta name="author" content="Ronald Yurko">
-<meta name="author" content="Konstantinos Pelechrinis">
-<meta name="author" content="Samuel Ventura">
-<meta name="dcterms.date" content="2020-04-28">
-<meta name="description" content="How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration">
+<meta name="dcterms.date" content="2020-09-30">
+<meta name="description" content="An introduction to modeling trail running performance">
 
-<title>Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses – CMSAC Research Lab</title>
+<title>TRAP: a predictive framework for the Assessment of Performance in Trail Running – CMSAC Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,22 +28,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -94,19 +93,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -134,28 +133,34 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses</h1>
+<h1 class="title">TRAP: a predictive framework for the Assessment of Performance in Trail Running</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">football</div>
-    <div class="quarto-category">player-tracking data</div>
-    <div class="quarto-category">completion probability</div>
-    <div class="quarto-category">image extraction</div>
-    <div class="quarto-category">generalized additive models</div>
+    <div class="quarto-category">trail running</div>
+    <div class="quarto-category">random forests</div>
+    <div class="quarto-category">prediction intervals</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    How Sarah Mallepalle created next-gen-scraPy and became an NFL inspiration
+    An introduction to modeling trail running performance
   </div>
 </div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Sarah Mallepalle </p>
+    <p class="author">Riccardo Fogliato </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Natalia L. Oliveira </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -170,22 +175,6 @@ ul.task-list li input[type="checkbox"] {
             Department of Statistics &amp; Data Science, Carnegie Mellon University
           </p>
       </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Konstantinos Pelechrinis </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            School of Computing and Information, University of Pittsburgh
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Samuel Ventura </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Department of Statistics &amp; Data Science, Carnegie Mellon University
-          </p>
-      </div>
   </div>
 
 <div class="quarto-title-meta">
@@ -194,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 28, 2020</p>
+      <p class="date">September 30, 2020</p>
     </div>
   </div>
   
@@ -206,30 +195,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0052/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#mallepalle2020extracting" aria-expanded="false" aria-controls="mallepalle2020extracting"> BibTeX </button>
-<div id="mallepalle2020extracting" class="collapse">
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0013/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/2002.01328" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#fogliato2021trap" aria-expanded="false" aria-controls="fogliato2021trap"> BibTeX </button>
+<div id="fogliato2021trap" class="collapse">
 <br>
 <div class="card card-body">
-<pre class="{bibtex}"><code>@article{mallepalle2020extracting,
-  title={Extracting NFL tracking data from images to evaluate quarterbacks and pass defenses},
-  author={Mallepalle, Sarah and Yurko, Ronald and Pelechrinis, Konstantinos and Ventura, Samuel L},
+<pre class="{bibtex}"><code>@article{fogliato2021trap,
+  title={TRAP: a predictive framework for the Assessment of Performance in Trail Running},
+  author={Fogliato, Riccardo and Oliveira, Natalia L and Yurko, Ronald},
   journal={Journal of Quantitative Analysis in Sports},
-  volume={16},
+  volume={17},
   number={2},
-  pages={95--120},
-  year={2020},
+  pages={129--143},
+  year={2021},
   publisher={De Gruyter}
 }</code></pre>
 </div>
 </div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>The NFL collects detailed tracking data capturing the location of all players and the ball during each play. Although the raw form of this data is not publicly available, the NFL releases a set of aggregated statistics via their Next Gen Stats (NGS) platform. They also provide charts showing the locations of pass attempts and outcomes for individual quarterbacks. Our work aims to partially close the gap between what data is available privately (to NFL teams) and publicly, and our contribution is two-fold. First, we introduce an image processing tool designed specifically for extracting the raw data from the NGS pass charts. We extract the pass outcome, coordinates, and other metadata. Second, we analyze the resulting dataset, examining the spatial tendencies and performances of individual quarterbacks and defenses. We use a generalized additive model for completion percentages by field location. We introduce a naive Bayes approach for estimating the 2-D completion percentage surfaces of individual teams and quarterbacks, and we provide a one-number summary, completion percentage above expectation (CPAE), for evaluating quarterbacks and team defenses. We find that our pass location data closely matches the NFL’s tracking data, and that our CPAE metric closely matches the NFL’s proprietary CPAE metric.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://ar5iv.labs.arxiv.org/html/1906.03339/assets/figures/qb_charts_bold/JoshuaAllen_cp.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
+<p>Trail running is an endurance sport in which athletes face severe physical challenges. Due to the growing number of participants, the organization of limited staff, equipment, and medical support in these races now plays a key role. Monitoring runner’s performance is a difficult task that requires knowledge of the terrain and of the runner’s ability. In the past, choices were solely based on the organizers’ experience without reliance on data. However, this approach is neither scalable nor transferable. Instead, we propose a firm statistical methodology to perform this task, both before and during the race. Our proposed framework, Trail Running Assessment of Performance (TRAP), studies (1) the assessment of the runner’s ability to reach the next checkpoint, (2) the prediction of the runner’s expected passage time at the next checkpoint, and (3) corresponding prediction intervals for the passage time. We apply our methodology, using the race history of runners from the International Trail Running Association (ITRA) along with checkpoint and terrain-level information, to the “holy grail” of ultra-trail running, the Ultra-Trail du Mont-Blanc (UTMB) race, demonstrating the predictive power of our methodology.</p>
 
 
 </section>

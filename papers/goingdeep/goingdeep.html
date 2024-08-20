@@ -6,14 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Quang Nguyen">
-<meta name="author" content="Ruitong (Larry) Jiang">
-<meta name="author" content="Meg Ellingwood">
 <meta name="author" content="Ronald Yurko">
-<meta name="dcterms.date" content="2024-03-21">
-<meta name="description" content="Introducing fractional tackles, a new way to measure tackles with player-tracking data (2024 Big Data Bowl finalist)">
+<meta name="author" content="Francesca Matano">
+<meta name="author" content="Lee F. Richardson">
+<meta name="author" content="Nicholas Granered">
+<meta name="author" content="Taylor Pospisil">
+<meta name="author" content="Konstantinos Pelechrinis">
+<meta name="author" content="Samuel Ventura">
+<meta name="dcterms.date" content="2020-01-13">
+<meta name="description" content="An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models">
 
-<title>Fractional tackles: Leveraging player tracking data for within-play tackling evaluation in american football – CMSAC Research Lab</title>
+<title>Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data – CMSAC Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,22 +32,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -94,19 +97,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -134,17 +137,22 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fractional tackles: Leveraging player tracking data for within-play tackling evaluation in american football</h1>
+<h1 class="title">Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data</h1>
   <div class="quarto-categories">
     <div class="quarto-category">football</div>
-    <div class="quarto-category">Big Data Bowl</div>
     <div class="quarto-category">player-tracking data</div>
+    <div class="quarto-category">Big Data Bowl</div>
+    <div class="quarto-category">expected points</div>
+    <div class="quarto-category">win probability</div>
+    <div class="quarto-category">continuous-time expected value</div>
+    <div class="quarto-category">deep learning</div>
+    <div class="quarto-category">conditional density estimation</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Introducing fractional tackles, a new way to measure tackles with player-tracking data (2024 Big Data Bowl finalist)
+    An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models
   </div>
 </div>
 
@@ -153,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Quang Nguyen </p>
+    <p class="author">Ronald Yurko <a href="mailto:ryurko@stat.cmu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -161,15 +169,7 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Ruitong (Larry) Jiang </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Neuroscience Institute and Center for the Neural Basis of Cognition, Carnegie Mellon University
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Meg Ellingwood </p>
+    <p class="author">Francesca Matano </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -177,7 +177,39 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Ronald Yurko </p>
+    <p class="author">Lee F. Richardson </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Nicholas Granered </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Statistics, University of Pittsburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Taylor Pospisil </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Konstantinos Pelechrinis </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Computing and Information, University of Pittsburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Ventura </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -192,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2024</p>
+      <p class="date">January 13, 2020</p>
     </div>
   </div>
   
@@ -204,26 +236,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<a href="https://arxiv.org/abs/2403.14769" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- Code --> <a href="https://github.com/qntkhvn/tackle" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#nguyen2024fractional" aria-expanded="false" aria-controls="nguyen2024fractional"> BibTeX </button>
-<div id="nguyen2024fractional" class="collapse">
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0056/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.01760" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2020going" aria-expanded="false" aria-controls="yurko2020going"> BibTeX </button>
+<div id="yurko2020going" class="collapse">
 <br>
 <div class="card card-body">
-<pre class="{bibtex}"><code>@article{nguyen2024fractional,
-  title={Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football},
-  author={Nguyen, Quang and Jiang, Ruitong and Ellingwood, Meg and Yurko, Ronald},
-  journal={arXiv preprint arXiv:2403.14769},
-  year={2024}
+<pre class="{bibtex}"><code>@article{yurko2020going,
+  title={Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data},
+  author={Yurko, Ronald and Matano, Francesca and Richardson, Lee F and Granered, Nicholas and Pospisil, Taylor and Pelechrinis, Konstantinos and Ventura, Samuel L},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={16},
+  number={2},
+  pages={163--182},
+  year={2020},
+  publisher={De Gruyter}
 }</code></pre>
 </div>
 </div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Tackling is a fundamental defensive move in American football, with the main purpose of stopping the forward motion of the ball-carrier. However, current tackling metrics are manually recorded outcomes that are inherently flawed due to their discrete and subjective nature. Using player tracking data, we present a novel framework for assessing tackling contribution in a continuous and objective manner. Our approach first identifies when a defender is in a ``contact window’’ of the ball-carrier during a play, before assigning value to each window and the players involved. This enables us to devise a new metric called fractional tackles, which credits defenders for halting the ball-carrier’s forward motion toward the end zone. We demonstrate that fractional tackles overcome the shortcomings of traditional metrics such as tackles and assists, by providing greater variation and measurable information for players lacking recorded statistics like defensive linemen. We view our contribution as a significant step forward in measuring defensive performance in American football and a clear demonstration of the capabilities of player tracking data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://arxiv.org/html/2403.14769v1/x6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
+<p>Continuous-time assessments of game outcomes in sports have become increasingly common in the last decade. In American football, only discrete-time estimates of play value were possible, since the most advanced public football datasets were recorded at the play-by-play level. While measures such as expected points and win probability are useful for evaluating football plays and game situations, there has been no research into how these values change throughout the course of a play. In this work, we make two main contributions: First, we introduce a general framework for continuous-time within-play valuation in the National Football League using player-tracking data. Our modular framework incorporates several modular sub-models, to easily incorporate recent work involving player tracking data in football. Second, we use a long short-term memory recurrent neural network to construct a ball-carrier model to estimate how many yards the ball-carrier is expected to gain from their current position, conditional on the locations and trajectories of the ball-carrier, their teammates and opponents. Additionally, we demonstrate an extension with conditional density estimation so that the expectation of any measure of play value can be calculated in continuous-time, which was never before possible at such a granular level.</p>
 
 
 </section>

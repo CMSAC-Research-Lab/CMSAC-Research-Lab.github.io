@@ -7,12 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ronald Yurko">
-<meta name="author" content="Quang Nguyen">
-<meta name="author" content="Konstantinos Pelechrinis">
-<meta name="dcterms.date" content="2024-06-25">
-<meta name="description" content="A ghosting framework to evaluate players with high-dimensional tracking data features through distribution estimates via flexible random forests for conditional density estimation.">
+<meta name="author" content="Samuel Ventura">
+<meta name="author" content="Maksim Horowitz">
+<meta name="dcterms.date" content="2019-04-16">
+<meta name="description" content="An introduction to reproducible expected points, win probability, and player evaluation models in American football">
 
-<title>NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation – CMSAC Research Lab</title>
+<title>nflWAR: a reproducible method for offensive player evaluation in football – CMSAC Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28,22 +28,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -93,19 +93,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -133,27 +133,25 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation</h1>
+<h1 class="title">nflWAR: a reproducible method for offensive player evaluation in football</h1>
   <div class="quarto-categories">
     <div class="quarto-category">football</div>
-    <div class="quarto-category">player-tracking data</div>
-    <div class="quarto-category">random forests</div>
-    <div class="quarto-category">conditional density estimation</div>
-    <div class="quarto-category">ghosting</div>
-    <div class="quarto-category">Big Data Bowl</div>
     <div class="quarto-category">expected points</div>
+    <div class="quarto-category">win probability</div>
+    <div class="quarto-category">player evaluation</div>
+    <div class="quarto-category">multilevel models</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A ghosting framework to evaluate players with high-dimensional tracking data features through distribution estimates via flexible random forests for conditional density estimation.
+    An introduction to reproducible expected points, win probability, and player evaluation models in American football
   </div>
 </div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
     <p class="author">Ronald Yurko <a href="mailto:ryurko@stat.cmu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
@@ -164,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Quang Nguyen </p>
+    <p class="author">Samuel Ventura </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -172,11 +170,11 @@ ul.task-list li input[type="checkbox"] {
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Konstantinos Pelechrinis </p>
+    <p class="author">Maksim Horowitz </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of Computing and Information, University of Pittsburgh
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
           </p>
       </div>
   </div>
@@ -187,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 25, 2024</p>
+      <p class="date">April 16, 2019</p>
     </div>
   </div>
   
@@ -199,26 +197,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<a href="https://arxiv.org/abs/2406.17220" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2024nfl" aria-expanded="false" aria-controls="yurko2024nfl"> BibTeX </button>
-<div id="yurko2024nfl" class="collapse">
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2018-0010/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1802.00998" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a> <!-- Code --> <a href="https://github.com/ryurko/nflWAR" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2019nflwar" aria-expanded="false" aria-controls="yurko2019nflwar"> BibTeX </button>
+<div id="yurko2019nflwar" class="collapse">
 <br>
 <div class="card card-body">
-<pre class="{bibtex}"><code>@article{yurko2024nfl,
-  title={NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation},
-  author={Yurko, Ronald and Nguyen, Quang and Pelechrinis, Konstantinos},
-  journal={arXiv preprint arXiv:2406.17220},
-  year={2024}
+<pre class="{bibtex}"><code>@article{yurko2019nflwar,
+  title={nflWAR: a reproducible method for offensive player evaluation in football},
+  author={Yurko, Ronald and Ventura, Samuel and Horowitz, Maksim},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={15},
+  number={3},
+  pages={163--183},
+  year={2019},
+  publisher={De Gruyter}
 }</code></pre>
 </div>
 </div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Player attribution in American football remains an open problem due to the complex nature of twenty-two players interacting on the field, but the granularity of player tracking data provides ample opportunity for novel approaches. In this work, we introduce the first public framework to evaluate spatial and trajectory tracking data of players relative to a baseline distribution of “ghost” defenders. We demonstrate our framework in the context of modeling the nearest defender positioning at the moment of catch. In particular, we provide estimates of how much better or worse their observed positioning and trajectory compared to the expected play value of ghost defenders. Our framework leverages high-dimensional tracking data features through flexible random forests for conditional density estimation in two ways: (1) to model the distribution of receiver yards gained enabling the estimation of within-play expected value, and (2) to model the 2D spatial distribution of baseline ghost defenders. We present novel metrics for measuring player and team performance based on tracking data, and discuss challenges that remain in extending our framework to other aspects of American football.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://arxiv.org/html/2406.17220v1/extracted/5689269/figures/ex_play_epv_grid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
+<p>Unlike other major professional sports, American football lacks comprehensive statistical ratings for player evaluation that are both reproducible and easily interpretable in terms of game outcomes. Existing methods for player evaluation in football depend heavily on proprietary data, are not reproducible, and lag behind those of other major sports. We present four contributions to the study of football statistics in order to address these issues. First, we develop the R package nflscrapR to provide easy access to publicly available play-by-play data from the National Football League (NFL) dating back to 2009. Second, we introduce a novel multinomial logistic regression approach for estimating the expected points for each play. Third, we use the expected points as input into a generalized additive model for estimating the win probability for each play. Fourth, we introduce our nflWAR framework, using multilevel models to isolate the contributions of individual offensive skill players, and providing estimates for their individual wins above replacement (WAR). We estimate the uncertainty in each player’s WAR through a resampling approach specifically designed for football, and we present these results for the 2017 NFL season. We discuss how our reproducible WAR framework, built entirely on publicly available data, can be easily extended to estimate WAR for players at any position, provided that researchers have access to data specifying which players are on the field during each play. Finally, we discuss the potential implications of this work for NFL teams.</p>
 
 
 </section>
