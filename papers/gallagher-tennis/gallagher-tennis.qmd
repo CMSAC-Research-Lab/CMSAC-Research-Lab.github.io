@@ -1,0 +1,50 @@
+---
+title: "Opening up the court: analyzing player performance across tennis Grand Slams"
+date: July 7, 2021
+description: This paper explores differences among Grand Slams, while adjusting for confounders such as tour, competitor strength, and player attributes for matches from 2013 to 2019
+image: cover.jpg
+author:
+  - name: Shannon K. Gallagher
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Kayla Frisoli
+    affiliation:
+      - ref: cmu
+  - name: Amanda Luby
+    affiliation: Department of Mathematics and Statistics, Swarthmore College
+categories:
+  - tennis
+  - hierarchical models
+  - mixed-effects models
+---
+
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0015/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://aluby.domains.swarthmore.edu/files/tennis-paper.pdf" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> PDF</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#gallagher2021opening" aria-expanded="false" aria-controls="gallagher2021opening">
+  BibTeX
+</button>
+<div class="collapse" id="gallagher2021opening">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{gallagher2021opening,
+  title={Opening up the court: analyzing player performance across tennis Grand Slams},
+  author={Gallagher, Shannon K and Frisoli, Kayla and Luby, Amanda},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={17},
+  number={4},
+  pages={255--271},
+  year={2021},
+  publisher={De Gruyter}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+In tennis, the Australian Open, French Open, Wimbledon, and US Open are the four most prestigious events (Grand Slams). These four Grand Slams differ in the composition of the court surfaces, when they are played in the year, and which city hosts the players. Individual Grand Slams come with different expectations, and it is often thought that some players achieve better results at some Grand Slams than others. It is also thought that differences in results may be attributed, at least partially, to surface type of the courts. For example, Rafael Nadal, Roger Federer, and Serena Williams have achieved their best results on clay, grass, and hard courts, respectively. This paper explores differences among Grand Slams, while adjusting for confounders such as tour, competitor strength, and player attributes. More specifically, we examine the effect of the Grand Slam on player performance for matches from 2013 to 2019. We take two approaches to modeling these data: (1) a mixed-effects model accounting for both player and tournament features and (2) models that emphasize individual performance. We identify differences across the Grand Slams at both the tournament and individual player level.
+
