@@ -4,6 +4,8 @@ listing:
   contents: media.yml
   type: table
   fields: [title, outlet, date]
+  field-display-names: 
+    outlet: Outlet
   sort:
     - "date desc"
     - "title asc"

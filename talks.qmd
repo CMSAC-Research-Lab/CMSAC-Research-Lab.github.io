@@ -5,6 +5,8 @@ listing:
   contents: talks.yml
   type: table
   fields: [title, event, date]
+  field-display-names: 
+    event: Event
   sort:
     - "date desc"
     - "event asc"
