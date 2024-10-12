@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://CMSAC-Research-Lab.github.io/index.html</loc>
-    <lastmod>2024-08-27T03:51:40.623Z</lastmod>
-  </url>
-  <url>
     <loc>https://CMSAC-Research-Lab.github.io/papers.html</loc>
-    <lastmod>2024-08-27T03:51:40.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/nhl-ratings/nhl-ratings.html</loc>
-    <lastmod>2024-08-27T03:51:40.643Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/goingdeep/goingdeep.html</loc>
-    <lastmod>2024-08-27T03:51:40.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/strain/strain.html</loc>
-    <lastmod>2024-08-27T03:51:40.643Z</lastmod>
+    <lastmod>2024-10-12T02:15:37.285Z</lastmod>
   </url>
   <url>
     <loc>https://CMSAC-Research-Lab.github.io/papers/gallagher-tennis/gallagher-tennis.html</loc>
-    <lastmod>2024-08-27T03:51:40.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/big-ideas/big-ideas.html</loc>
-    <lastmod>2024-08-27T03:51:40.627Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/fractional-tackles/fractional-tackles.html</loc>
-    <lastmod>2024-08-27T03:51:40.631Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/talks.html</loc>
-    <lastmod>2024-08-27T03:51:40.647Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/nflghosts/nflghosts.html</loc>
-    <lastmod>2024-08-27T03:51:40.643Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/trap/trap.html</loc>
-    <lastmod>2024-08-27T03:51:40.647Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/intraocular/intraocular.html</loc>
-    <lastmod>2024-08-27T03:51:40.639Z</lastmod>
+    <lastmod>2024-10-12T02:15:37.297Z</lastmod>
   </url>
   <url>
     <loc>https://CMSAC-Research-Lab.github.io/papers/dutta-coverage/dutta-coverage.html</loc>
-    <lastmod>2024-08-27T03:51:40.627Z</lastmod>
+    <lastmod>2024-10-12T02:15:37.293Z</lastmod>
   </url>
   <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/aging/aging.html</loc>
-    <lastmod>2024-08-27T03:51:40.623Z</lastmod>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/fractional-tackles/fractional-tackles.html</loc>
+    <lastmod>2024-10-12T02:15:37.293Z</lastmod>
   </url>
   <url>
-    <loc>https://CMSAC-Research-Lab.github.io/papers/nflwar/nflwar.html</loc>
-    <lastmod>2024-08-27T03:51:40.643Z</lastmod>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/strain/strain.html</loc>
+    <lastmod>2024-10-12T02:15:37.305Z</lastmod>
   </url>
   <url>
     <loc>https://CMSAC-Research-Lab.github.io/papers/nextgenscrapy/nextgenscrapy.html</loc>
-    <lastmod>2024-08-27T03:51:40.639Z</lastmod>
+    <lastmod>2024-10-12T02:15:37.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/goingdeep/goingdeep.html</loc>
+    <lastmod>2024-10-12T02:15:37.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/index.html</loc>
+    <lastmod>2024-10-12T02:15:37.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/talks.html</loc>
+    <lastmod>2024-10-12T02:15:37.309Z</lastmod>
   </url>
   <url>
     <loc>https://CMSAC-Research-Lab.github.io/media.html</loc>
-    <lastmod>2024-08-27T03:51:40.623Z</lastmod>
+    <lastmod>2024-10-12T02:15:37.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/aging/aging.html</loc>
+    <lastmod>2024-10-12T02:15:37.289Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/intraocular/intraocular.html</loc>
+    <lastmod>2024-10-12T02:15:37.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/nhl-ratings/nhl-ratings.html</loc>
+    <lastmod>2024-10-12T02:15:37.305Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/nflghosts/nflghosts.html</loc>
+    <lastmod>2024-10-12T02:15:37.305Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/trap/trap.html</loc>
+    <lastmod>2024-10-12T02:15:37.309Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/big-ideas/big-ideas.html</loc>
+    <lastmod>2024-10-12T02:15:37.289Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CMSAC-Research-Lab.github.io/papers/nflwar/nflwar.html</loc>
+    <lastmod>2024-10-12T02:15:37.305Z</lastmod>
   </url>
 </urlset>
