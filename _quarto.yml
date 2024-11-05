@@ -3,7 +3,7 @@ project:
 
 website:
   title: "CMSAC Research Lab"
-  page-footer: "[www.stat.cmu.edu/cmsac](https://www.stat.cmu.edu/cmsac/)"
+  page-footer: "[![](https://www.cmu.edu/dietrich/statistics-datascience/cmsac/images/cmsac-logo-min.png){width=50%}](https://www.stat.cmu.edu/cmsac)"
   navbar:
     left:
       - href: index.qmd
