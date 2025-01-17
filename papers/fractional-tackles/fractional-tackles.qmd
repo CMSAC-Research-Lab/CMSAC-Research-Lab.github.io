@@ -22,6 +22,7 @@ categories:
   - player-tracking data
 ---
 
+<a href="https://www.nature.com/articles/s41598-025-85993-1" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> Scientific Reports (Nature Portfolio)</a>
 <a href="https://arxiv.org/abs/2403.14769" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
 <!-- Code -->
 <a href="https://github.com/qntkhvn/tackle" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
@@ -33,11 +34,14 @@ categories:
   <br>
   <div class="card card-body">
 ```{bibtex}
-@article{nguyen2024fractional,
+@article{nguyen2025fractional,
   title={Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football},
   author={Nguyen, Quang and Jiang, Ruitong and Ellingwood, Meg and Yurko, Ronald},
-  journal={arXiv preprint arXiv:2403.14769},
-  year={2024}
+  journal={Scientific Reports},
+  volume={15},
+  pages={2148},
+  year={2025},
+  publisher={Nature Portfolio}
 }
 ```
   </div>
