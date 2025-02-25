@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/talks.html",
+    "listing": "/media.html",
     "items": []
   },
   {
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "listing": "/media.html",
+    "listing": "/talks.html",
     "items": []
   }
 ]
