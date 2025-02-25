@@ -1,7 +1,7 @@
 ---
 title: "A multilevel model with heterogeneous variances for snap timing in the National Football League"
 date: February 21, 2025
-description: A multilevel modeling framework for evaluating of a quarterback’s ability to maintain snap timing variability in the presence of pre-snap motion (2025 NFL Big Data Bowl semifinalist)
+description: A multilevel modeling framework for evaluating a quarterback’s ability to maintain snap timing variability in the presence of pre-snap motion (2025 NFL Big Data Bowl semifinalist)
 image: cover.jpg
 author:
   - name: Quang Nguyen
