@@ -6,6 +6,7 @@
   {
     "listing": "/papers.html",
     "items": [
+      "/papers/snap-timing/snap-timing.html",
       "/papers/nflghosts/nflghosts.html",
       "/papers/fractional-tackles/fractional-tackles.html",
       "/papers/strain/strain.html",
