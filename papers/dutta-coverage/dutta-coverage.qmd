@@ -15,14 +15,14 @@ author:
     affiliation:
       - ref: cmu
 categories:
-  - football
-  - player-tracking data
+  - NFL
+  - player tracking data
   - Big Data Bowl
   - mixture models
 ---
 
 <a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0017/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
-<a href="https://arxiv.org/abs/1906.11373" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/1906.11373" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#dutta2020unsupervised" aria-expanded="false" aria-controls="dutta2020unsupervised">
   BibTeX

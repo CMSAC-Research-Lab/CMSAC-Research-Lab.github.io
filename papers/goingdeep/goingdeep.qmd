@@ -26,8 +26,8 @@ author:
     affiliation:
       - ref: cmu
 categories:
-  - football
-  - player-tracking data
+  - NFL
+  - player tracking data
   - Big Data Bowl
   - expected points
   - win probability
@@ -37,7 +37,7 @@ categories:
 ---
 
 <a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0056/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
-<a href="https://arxiv.org/abs/1906.01760" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/1906.01760" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2020going" aria-expanded="false" aria-controls="yurko2020going">
   BibTeX

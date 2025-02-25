@@ -15,8 +15,8 @@ author:
   - name: Konstantinos Pelechrinis
     affiliation: School of Computing and Information, University of Pittsburgh
 categories:
-  - football
-  - player-tracking data
+  - NFL
+  - player tracking data
   - random forests
   - conditional density estimation
   - ghosting
@@ -24,7 +24,7 @@ categories:
   - expected points
 ---
 
-<a href="https://arxiv.org/abs/2406.17220" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/2406.17220" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2024nfl" aria-expanded="false" aria-controls="yurko2024nfl">
   BibTeX

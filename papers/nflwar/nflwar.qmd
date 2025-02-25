@@ -16,7 +16,7 @@ author:
     affiliation:
     - ref: cmu
 categories:
-  - football
+  - NFL
   - expected points
   - win probability
   - player evaluation
@@ -24,7 +24,7 @@ categories:
 ---
 
 <a href="https://www.degruyter.com/document/doi/10.1515/jqas-2018-0010/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
-<a href="https://arxiv.org/abs/1802.00998" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/1802.00998" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- Code -->
 <a href="https://github.com/ryurko/nflWAR" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
 <!-- BibTeX -->

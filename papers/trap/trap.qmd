@@ -1,5 +1,5 @@
 ---
-title: "TRAP: a predictive framework for the Assessment of Performance in Trail Running"
+title: "TRAP: A Predictive Framework for the Assessment of Performance in Trail Running"
 date: September 30, 2020
 description: An introduction to modeling trail running performance
 image: cover.jpg
@@ -22,7 +22,7 @@ categories:
 ---
 
 <a href="https://www.degruyter.com/document/doi/10.1515/jqas-2020-0013/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
-<a href="https://arxiv.org/abs/2002.01328" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/2002.01328" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#fogliato2021trap" aria-expanded="false" aria-controls="fogliato2021trap">
   BibTeX

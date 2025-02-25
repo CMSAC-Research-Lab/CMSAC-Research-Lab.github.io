@@ -26,7 +26,7 @@ categories:
 ---
 
 <a href="https://doi.org/10.1214/13-AOAS646" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> Annals of Applied Statistics</a>
-<a href="https://arxiv.org/abs/1208.0799" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/1208.0799" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#thomas2013competing" aria-expanded="false" aria-controls="thomas2013competing">
   BibTeX

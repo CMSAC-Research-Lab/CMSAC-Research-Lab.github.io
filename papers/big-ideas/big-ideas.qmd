@@ -9,19 +9,14 @@ author:
   - name: Gregory J. Matthews
     affiliation: Department of Mathematics and Statistics, Loyola University Chicago
   - name: Quang Nguyen
-    affiliation:
-      - id: cmu
-        name: Department of Statistics & Data Science, Carnegie Mellon University
+    affiliation: Department of Statistics & Data Science, Carnegie Mellon University
 categories:
-  - datasets
-  - pairwise comparisons
   - R packages
-  - sports analytics
-  - sports data
+  - review
 ---
 
 <a href="https://doi.org/10.1002/wics.1612" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> WIREs Computational Statistics</a>
-<a href="https://arxiv.org/abs/2301.04001" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/2301.04001" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- Code -->
 <a href="https://github.com/beanumber/wire21" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
 <!-- BibTeX -->

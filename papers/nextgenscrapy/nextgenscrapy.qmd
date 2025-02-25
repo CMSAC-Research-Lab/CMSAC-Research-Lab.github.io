@@ -18,15 +18,15 @@ author:
     affiliation:
       - ref: cmu
 categories:
-  - football
-  - player-tracking data
+  - NFL
+  - player tracking data
   - completion probability
   - image extraction
   - generalized additive models
 ---
 
 <a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0052/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
-<a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/1906.03339" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#mallepalle2020extracting" aria-expanded="false" aria-controls="mallepalle2020extracting">
   BibTeX

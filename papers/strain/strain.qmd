@@ -1,7 +1,7 @@
 ---
 title: "Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data"
 date: July 25, 2023
-description: Introducing STRAIN, a novel metric for measuring pass rushers (2023 Big Data Bowl finalist)
+description: Introducing STRAIN, a novel metric for measuring pass rushers (2023 NFL Big Data Bowl finalist)
 image: cover.jpg
 author:
   - name: Quang Nguyen
@@ -14,14 +14,14 @@ author:
   - name: Gregory J. Matthews
     affiliation: Department of Mathematics and Statistics, Loyola University Chicago
 categories:
-  - football
+  - NFL
   - Big Data Bowl
-  - player-tracking data
+  - player tracking data
   - multilevel models
 ---
 
 <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2023.2242442" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> The American Statistician</a>
-<a href="https://arxiv.org/abs/2305.10262" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/2305.10262" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- Code -->
 <a href="https://github.com/getstrained/intro-strain" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
 <!-- BibTeX -->

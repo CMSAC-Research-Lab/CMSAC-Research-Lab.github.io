@@ -1,7 +1,7 @@
 ---
-title: "Fractional tackles: Leveraging player tracking data for within-play tackling evaluation in american football"
+title: "Fractional tackles: Leveraging player tracking data for within-play tackling evaluation in American football"
 date: March 21, 2024
-description: Introducing fractional tackles, a new way to measure tackles with player-tracking data (2024 Big Data Bowl finalist)
+description: Introducing fractional tackles, a new way to measure tackles with player-tracking data (2024 NFL Big Data Bowl finalist)
 image: cover.jpg
 author:
   - name: Quang Nguyen
@@ -17,20 +17,20 @@ author:
     affiliation:
       - ref: cmu
 categories:
-  - football
+  - NFL
   - Big Data Bowl
-  - player-tracking data
+  - player tracking data
 ---
 
 <a href="https://www.nature.com/articles/s41598-025-85993-1" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> Scientific Reports (Nature Portfolio)</a>
-<a href="https://arxiv.org/abs/2403.14769" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arxiv</a>
+<a href="https://arxiv.org/abs/2403.14769" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- Code -->
 <a href="https://github.com/qntkhvn/tackle" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
 <!-- BibTeX -->
-<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#nguyen2024fractional" aria-expanded="false" aria-controls="nguyen2024fractional">
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#nguyen2025fractional" aria-expanded="false" aria-controls="nguyen2025fractional">
   BibTeX
 </button>
-<div class="collapse" id="nguyen2024fractional">
+<div class="collapse" id="nguyen2025fractional">
   <br>
   <div class="card card-body">
 ```{bibtex}
