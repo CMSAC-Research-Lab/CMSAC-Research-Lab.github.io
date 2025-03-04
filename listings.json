@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/media.html",
+    "items": []
+  },
+  {
     "listing": "/papers.html",
     "items": [
       "/papers/snap-timing/snap-timing.html",
@@ -17,10 +21,6 @@
       "/papers/nflwar/nflwar.html",
       "/papers/nhl-ratings/nhl-ratings.html"
     ]
-  },
-  {
-    "listing": "/media.html",
-    "items": []
   },
   {
     "listing": "/talks.html",
