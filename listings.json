@@ -4,6 +4,10 @@
     "items": []
   },
   {
+    "listing": "/talks.html",
+    "items": []
+  },
+  {
     "listing": "/papers.html",
     "items": [
       "/papers/turn-angle/turn-angle.html",
@@ -23,9 +27,5 @@
       "/papers/nflwar/nflwar.html",
       "/papers/nhl-ratings/nhl-ratings.html"
     ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": []
   }
 ]
