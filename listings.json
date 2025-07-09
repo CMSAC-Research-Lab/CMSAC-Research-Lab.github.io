@@ -4,8 +4,14 @@
     "items": []
   },
   {
+    "listing": "/talks.html",
+    "items": []
+  },
+  {
     "listing": "/papers.html",
     "items": [
+      "/papers/turn-angle/turn-angle.html",
+      "/papers/swinging-fast-slow/swinging-fast-slow.html",
       "/papers/snap-timing/snap-timing.html",
       "/papers/nflghosts/nflghosts.html",
       "/papers/fractional-tackles/fractional-tackles.html",
@@ -21,9 +27,5 @@
       "/papers/nflwar/nflwar.html",
       "/papers/nhl-ratings/nhl-ratings.html"
     ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": []
   }
 ]
