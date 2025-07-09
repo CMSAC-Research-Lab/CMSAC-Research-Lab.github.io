@@ -1,0 +1,42 @@
+---
+title: "Swinging, Fast and Slow: Interpreting variation in baseball swing tracking metrics"
+date: July 1, 2025
+description: Examining the relationship between swing aggression and outcomes in baseball using bat tracking data.
+image: cover.jpg
+author:
+  - name: Scott Powers
+    affiliation: Department of Sport Management, Rice University
+  - name: Ronald Yurko
+    affiliation: Department of Statistics & Data Science, Carnegie Mellon University
+categories:
+  - MLB
+  - bat tracking data
+  - Bayesian
+  - multilevel models
+---
+
+<a href="https://arxiv.org/abs/2507.01238" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
+<!-- Code -->
+<a href="https://github.com/saberpowers/swinging-fast-and-slow" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#powers2025swinging" aria-expanded="false" aria-controls="powers2025swinging">
+  BibTeX
+</button>
+<div class="collapse" id="powers2025swinging">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{powers2025swinging,
+  title={Swinging, Fast and Slow: Interpreting variation in baseball swing tracking metrics},
+  author={Powers, Scott and Yurko, Ronald},
+  journal={arXiv preprint arXiv:2507.01238},
+  year={2025}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+In 2024, Major League Baseball released new bat tracking data, reporting swing-by-swing bat speed and swing length measured at the point of contact. While exciting, the data present challenges for their interpretation. The timing of the batter's swing relative to the pitch determines the point of measurement relative to the full swing path. The relationship between swing metrics and swing outcomes is confounded by the batter's pitch recognition. We introduce a framework for interpreting bat tracking data in which we first estimate the batter's intention conditional on ball-strike count and pitch location using a Bayesian hierarchical skew-normal model with random intercept and random slopes for batter. This yields batter-specific effects of count on swing metrics, which we leverage via instrumental variables regression to estimate causal effects of bat speed and swing length on contact and power outcomes. Finally, we valuate the tradeoff between contact and power due to bat speed by modeling a plate appearance as a Markov chain. We conclude that batters can reduce their strikeout rate by reducing bat speed as strikes increase, but the tradeoff in reduced power approximately counteracts the benefit to the average batter.

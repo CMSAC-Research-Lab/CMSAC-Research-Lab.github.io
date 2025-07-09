@@ -1,0 +1,47 @@
+---
+title: "A Bayesian circular mixed-effects model for explaining variability in directional movement in American football"
+date: July 8, 2025
+description: A Bayesian circular mixed-effects modeling framework for evaluating variability in change of direction of NFL players
+image: cover.jpg
+author:
+  - name: Quang Nguyen
+    affiliation:
+      - id: cmu
+        name: Department of Statistics & Data Science, Carnegie Mellon University
+  - name: Ronald Yurko
+    affiliation:
+      - ref: cmu
+categories:
+  - NFL
+  - Big Data Bowl
+  - player tracking data
+  - Bayesian
+  - multilevel models
+  - circular statistics
+---
+
+<a href="https://arxiv.org/abs/2507.06122" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
+<!-- Code -->
+<a href="https://github.com/qntkhvn/turn-angle" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>
+<!-- BibTeX -->
+<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#nguyen2025bayesian" aria-expanded="false" aria-controls="nguyen2025bayesian">
+  BibTeX
+</button>
+<div class="collapse" id="nguyen2025bayesian">
+  <br>
+  <div class="card card-body">
+```{bibtex}
+@article{nguyen2025bayesian,
+  title={A Bayesian circular mixed-effects model for explaining variability in directional movement in American football},
+  author={Nguyen, Quang and Yurko, Ronald},
+  journal={arXiv preprint arXiv:2507.06122},
+  year={2025}
+}
+```
+  </div>
+</div>
+
+
+### Abstract
+
+Change of direction is a key element of player movement in American football, yet there remains a lack of objective approaches for in-game performance evaluation of this athletic trait. Using tracking data, we propose a Bayesian mixed-effects model with heterogeneous variances for assessing a player's ability to make variable directional adjustments while moving on the field. We model the turn angle (i.e., angle between successive displacement vectors) for NFL ball carriers on both passing and rushing plays, focusing on receivers after the catch and running backs after the handoff. In particular, we consider a von Mises distribution for the frame-level turn angle and explicitly model both the mean and concentration parameters with relevant spatiotemporal and contextual covariates. Of primary interest, we include player random effects that allow the turn angle concentration to vary by ball carrier nested within position groups. This offers practical insight into player evaluation, as it reveals the shiftiest ball carriers with great variability in turning behavior. We illustrate our approach with results from the first nine weeks of the 2022 NFL regular season and explore player-specific and positional differences in turn angle variability.
