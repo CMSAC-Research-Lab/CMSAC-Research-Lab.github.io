@@ -1,5 +1,5 @@
 ---
-title: "Bayesian multilevel step-and-turn models for evaluating player movement in American footbal"
+title: "Bayesian multilevel step-and-turn models for evaluating player movement in American football"
 date: March 18, 2026
 description: A statistically-driven ghosting framework to assess continuous-time player movement relative to a distribution of frame-level hypothetical alternatives
 image: cover.jpg
