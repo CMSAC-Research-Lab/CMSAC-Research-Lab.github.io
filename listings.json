@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/media.html",
+    "items": []
+  },
+  {
     "listing": "/papers.html",
     "items": [
       "/papers/nfl-step-turn/nfl-step-turn.html",
@@ -20,10 +24,6 @@
       "/papers/nfl-war/nfl-war.html",
       "/papers/nhl-ratings/nhl-ratings.html"
     ]
-  },
-  {
-    "listing": "/media.html",
-    "items": []
   },
   {
     "listing": "/talks.html",
