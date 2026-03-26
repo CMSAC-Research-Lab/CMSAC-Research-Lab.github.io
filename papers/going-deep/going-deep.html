@@ -6,8 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ronald Yurko">
+<meta name="author" content="Francesca Matano">
+<meta name="author" content="Lee F. Richardson">
+<meta name="author" content="Nicholas Granered">
+<meta name="author" content="Taylor Pospisil">
+<meta name="author" content="Konstantinos Pelechrinis">
+<meta name="author" content="Samuel L. Ventura">
+<meta name="dcterms.date" content="2020-01-13">
+<meta name="description" content="An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models">
 
-<title>CMSAC Research Lab</title>
+<title>Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data – CMSAC Research Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +35,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ab761d20612e0f8aac47f2092ca6dc9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ab761d20612e0f8aac47f2092ca6dc9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -92,19 +101,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -118,22 +127,110 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CMSAC Research Lab</h1>
+<h1 class="title">Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">NFL</div>
+    <div class="quarto-category">player tracking data</div>
+    <div class="quarto-category">Big Data Bowl</div>
+    <div class="quarto-category">expected points</div>
+    <div class="quarto-category">win probability</div>
+    <div class="quarto-category">continuous-time expected value</div>
+    <div class="quarto-category">deep learning</div>
+    <div class="quarto-category">conditional density estimation</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An introduction to continuous-time, within-play expected value in football demonstrated with ball-carrier models
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ronald Yurko <a href="mailto:ryurko@stat.cmu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Francesca Matano </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lee F. Richardson </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Nicholas Granered </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Statistics, University of Pittsburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Taylor Pospisil </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Konstantinos Pelechrinis </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Computing and Information, University of Pittsburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel L. Ventura </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 13, 2020</p>
+    </div>
+  </div>
   
     
   </div>
@@ -143,18 +240,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the homepage of the <a href="https://www.stat.cmu.edu/cmsac/">Carnegie Mellon Sports Analytics Center (CMSAC)</a> Research Lab. We are a group of faculty and students in the <a href="https://stat.cmu.edu/">Department of Statistics &amp; Data Science at Carnegie Mellon University</a> working on developing novel, cutting-edge approaches in sports analytics across a wide range of problems. Our recent focus has been on inferring player- and team-level effects using rich spatiotemporal player tracking data.</p>
-<p>You can check out papers by the CMSAC Research Lab on this site, along with links to talks and media articles featuring our work.</p>
-<p>The core members of our lab include:</p>
-<ul>
-<li><a href="https://www.stat.cmu.edu/~ryurko/">Ron Yurko</a>, Principal Investigator and Director of CMSAC</li>
-<li><a href="https://qntkhvn.netlify.app/">Quang Nguyen</a>, PhD student, Statistics &amp; Data Science</li>
-<li>Ruitong (Larry) Jiang, PhD student, Neuroscience</li>
-<li>Meg Ellingwood, PhD student, Statistics &amp; Data Science</li>
-<li><a href="https://www.cmu.edu/dietrich/statistics-datascience/people/affiliated/sam-ventura.html">Sam Ventura</a>, Affiliated Faculty, and Vice President of Hockey Strategy and Research, Buffalo Sabres</li>
-</ul>
+<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0056/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a> <a href="https://arxiv.org/abs/1906.01760" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#yurko2020going" aria-expanded="false" aria-controls="yurko2020going"> BibTeX </button>
+<div id="yurko2020going" class="collapse">
+<br>
+<div class="card card-body">
+<pre class="{bibtex}"><code>@article{yurko2020going,
+  title={Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data},
+  author={Yurko, Ronald and Matano, Francesca and Richardson, Lee F and Granered, Nicholas and Pospisil, Taylor and Pelechrinis, Konstantinos and Ventura, Samuel L},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={16},
+  number={2},
+  pages={163--182},
+  year={2020},
+  publisher={De Gruyter}
+}</code></pre>
+</div>
+</div>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Continuous-time assessments of game outcomes in sports have become increasingly common in the last decade. In American football, only discrete-time estimates of play value were possible, since the most advanced public football datasets were recorded at the play-by-play level. While measures such as expected points and win probability are useful for evaluating football plays and game situations, there has been no research into how these values change throughout the course of a play. In this work, we make two main contributions: First, we introduce a general framework for continuous-time within-play valuation in the National Football League using player-tracking data. Our modular framework incorporates several modular sub-models, to easily incorporate recent work involving player tracking data in football. Second, we use a long short-term memory recurrent neural network to construct a ball-carrier model to estimate how many yards the ball-carrier is expected to gain from their current position, conditional on the locations and trajectories of the ball-carrier, their teammates and opponents. Additionally, we demonstrate an extension with conditional density estimation so that the expectation of any measure of play value can be calculated in continuous-time, which was never before possible at such a granular level.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

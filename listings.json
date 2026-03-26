@@ -1,15 +1,12 @@
 [
   {
-    "listing": "/media.html",
-    "items": []
-  },
-  {
     "listing": "/papers.html",
     "items": [
-      "/papers/turn-angle/turn-angle.html",
+      "/papers/nfl-step-turn/nfl-step-turn.html",
+      "/papers/nfl-cod/nfl-cod.html",
       "/papers/swinging-fast-slow/swinging-fast-slow.html",
       "/papers/snap-timing/snap-timing.html",
-      "/papers/nflghosts/nflghosts.html",
+      "/papers/nfl-ghosts/nfl-ghosts.html",
       "/papers/fractional-tackles/fractional-tackles.html",
       "/papers/strain/strain.html",
       "/papers/intraocular/intraocular.html",
@@ -18,11 +15,15 @@
       "/papers/gallagher-tennis/gallagher-tennis.html",
       "/papers/trap/trap.html",
       "/papers/dutta-coverage/dutta-coverage.html",
-      "/papers/nextgenscrapy/nextgenscrapy.html",
-      "/papers/goingdeep/goingdeep.html",
-      "/papers/nflwar/nflwar.html",
+      "/papers/next-gen-scrapy/next-gen-scrapy.html",
+      "/papers/going-deep/going-deep.html",
+      "/papers/nfl-war/nfl-war.html",
       "/papers/nhl-ratings/nhl-ratings.html"
     ]
+  },
+  {
+    "listing": "/media.html",
+    "items": []
   },
   {
     "listing": "/talks.html",

@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Quang Nguyen">
+<meta name="author" content="Ronald Yurko">
+<meta name="dcterms.date" content="2026-03-18">
+<meta name="description" content="A statistically-driven ghosting framework to assess continuous-time player movement relative to a distribution of frame-level hypothetical alternatives">
 
-<title>CMSAC Research Lab</title>
+<title>Bayesian multilevel step-and-turn models for evaluating player movement in American footbal – CMSAC Research Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +30,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ab761d20612e0f8aac47f2092ca6dc9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ab761d20612e0f8aac47f2092ca6dc9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">CMSAC Research Lab</span>
     </a>
   </div>
@@ -92,19 +96,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
+    <a class="nav-link" href="../../media.html"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -118,22 +122,69 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CMSAC Research Lab</h1>
+<h1 class="title">Bayesian multilevel step-and-turn models for evaluating player movement in American footbal</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">NFL</div>
+    <div class="quarto-category">Big Data Bowl</div>
+    <div class="quarto-category">player tracking data</div>
+    <div class="quarto-category">Bayesian</div>
+    <div class="quarto-category">multilevel models</div>
+    <div class="quarto-category">simulation</div>
+    <div class="quarto-category">ghosting</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A statistically-driven ghosting framework to assess continuous-time player movement relative to a distribution of frame-level hypothetical alternatives
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Quang Nguyen </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ronald Yurko </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Statistics &amp; Data Science, Carnegie Mellon University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 18, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -143,18 +194,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the homepage of the <a href="https://www.stat.cmu.edu/cmsac/">Carnegie Mellon Sports Analytics Center (CMSAC)</a> Research Lab. We are a group of faculty and students in the <a href="https://stat.cmu.edu/">Department of Statistics &amp; Data Science at Carnegie Mellon University</a> working on developing novel, cutting-edge approaches in sports analytics across a wide range of problems. Our recent focus has been on inferring player- and team-level effects using rich spatiotemporal player tracking data.</p>
-<p>You can check out papers by the CMSAC Research Lab on this site, along with links to talks and media articles featuring our work.</p>
-<p>The core members of our lab include:</p>
-<ul>
-<li><a href="https://www.stat.cmu.edu/~ryurko/">Ron Yurko</a>, Principal Investigator and Director of CMSAC</li>
-<li><a href="https://qntkhvn.netlify.app/">Quang Nguyen</a>, PhD student, Statistics &amp; Data Science</li>
-<li>Ruitong (Larry) Jiang, PhD student, Neuroscience</li>
-<li>Meg Ellingwood, PhD student, Statistics &amp; Data Science</li>
-<li><a href="https://www.cmu.edu/dietrich/statistics-datascience/people/affiliated/sam-ventura.html">Sam Ventura</a>, Affiliated Faculty, and Vice President of Hockey Strategy and Research, Buffalo Sabres</li>
-</ul>
+<a href="https://arxiv.org/abs/2603.17866" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a> <!-- Code --> <a href="https://github.com/qntkhvn/nfl-step-turn" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a> <!-- BibTeX --> <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#nguyen2026bayesian" aria-expanded="false" aria-controls="nguyen2026bayesian"> BibTeX </button>
+<div id="nguyen2026bayesian" class="collapse">
+<br>
+<div class="card card-body">
+<pre class="{bibtex}"><code>@article{nguyen2026bayesian,
+  title={Bayesian multilevel step-and-turn models for evaluating player movement in American football},
+  author={Nguyen, Quang and Yurko, Ronald},
+  journal={arXiv preprint arXiv:2603.17866},
+  year={2026}
+}</code></pre>
+</div>
+</div>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Change of direction is a key element of player movement in American football, yet there remains a lack of objective approaches for in-game performance evaluation of this athletic trait. Using tracking data, we propose a Bayesian mixed-effects model with heterogeneous variances for assessing a player’s ability to make variable directional adjustments while moving on the field. We model the turn angle (i.e., angle between successive displacement vectors) for NFL ball carriers on both passing and rushing plays, focusing on receivers after the catch and running backs after the handoff. In particular, we consider a von Mises distribution for the frame-level turn angle and explicitly model both the mean and concentration parameters with relevant spatiotemporal and contextual covariates. Of primary interest, we include player random effects that allow the turn angle concentration to vary by ball carrier nested within position groups. This offers practical insight into player evaluation, as it reveals the shiftiest ball carriers with great variability in turning behavior. We illustrate our approach with results from the first nine weeks of the 2022 NFL regular season and explore player-specific and positional differences in turn angle variability.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
