@@ -20,7 +20,7 @@ categories:
   - multilevel models
 ---
 
-<a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2023.2242442" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> The American Statistician</a>
+<a href="https://doi.org/10.1080/00031305.2023.2242442" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> The American Statistician</a>
 <a href="https://arxiv.org/abs/2305.10262" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> arXiv</a>
 <!-- Code -->
 <a href="https://github.com/getstrained/intro-strain" target="_blank" rel="noopener noreferrer" class="bi-github btn btn-secondary" role="button"> code</a>

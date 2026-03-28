@@ -19,7 +19,7 @@ categories:
   - mixed-effects models
 ---
 
-<a href="https://www.degruyter.com/document/doi/10.1515/jqas-2019-0015/html?lang=en" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
+<a href="https://doi.org/10.1515/jqas-2019-0015" target="_blank" rel="noopener noreferrer" class="bi-bank btn btn-primary" role="button"> JQAS</a>
 <a href="https://aluby.domains.swarthmore.edu/files/tennis-paper.pdf" target="_blank" rel="noopener noreferrer" class="bi-file-earmark-text-fill btn btn-warning" role="button"> PDF</a>
 <!-- BibTeX -->
 <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#gallagher2021opening" aria-expanded="false" aria-controls="gallagher2021opening">
