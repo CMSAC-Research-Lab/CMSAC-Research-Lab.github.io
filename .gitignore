@@ -14,3 +14,4 @@ _site/
 # Session Data files
 .RData
 .RDataTmp
+**/*.quarto_ipynb
